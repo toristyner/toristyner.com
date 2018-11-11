@@ -24,3 +24,8 @@ body {
 .container {
   height: 100%;
 }
+
+.iw-container {
+  padding: 10;
+  height: 120;
+}
