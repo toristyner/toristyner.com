@@ -1,5 +1,12 @@
 import * as places from './places'
+import { values } from 'lodash'
 
-export default {
-  ...places
+export const getPlaces = () => {
+  return values(places)
+}
+
+export const getPlaceById = id => {
+  return {
+    ...places[id],
+  }
 }

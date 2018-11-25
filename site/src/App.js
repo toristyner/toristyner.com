@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
-import {Trip} from './pages'
-import './App.css';
+import React, { Component } from 'react'
+import { TableOfContents } from './pages'
+import './App.css'
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
-       <Trip />
+        <TableOfContents />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

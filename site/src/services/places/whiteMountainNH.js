@@ -1,7 +1,9 @@
 export default {
-  name: 'Lincoln, NH',
+  name: 'The White Mountains',
+  shortName: '',
+  icon: 'something',
   states: ['NH'],
-  dateRange: [],
+  dateRange: ['10/10/2018', '10/11/2018'],
   coordinatesToCenter: {
     latitude: 44.041601,
     longitude: -71.675379,
