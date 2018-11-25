@@ -1,4 +1,5 @@
 export default {
+  id: 'oahu',
   name: 'Oahu, Hawaii',
   shortName: '',
   icon: 'something',

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { getPlaces } from '../../services/placeService'
 import { ListItem } from './'
 
@@ -11,7 +12,6 @@ class TableOfContents extends Component {
   }
 
   componentDidMount = () => {
-    console.log(getPlaces())
     this.setState({
       places: getPlaces(),
     })
@@ -22,7 +22,9 @@ class TableOfContents extends Component {
       <div className="column">
         <div>Table of Contents</div>
         {this.state.places.map(item => (
-          <ListItem key={`toc-${item.id}`} {...item} />
+          <Link key={`toc-${item.id}`} to={`${item.id}`}>
+            <ListItem {...item} />
+          </Link>
         ))}
       </div>
     )

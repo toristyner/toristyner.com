@@ -1,4 +1,5 @@
 export default {
+  id: 'whiteMountains',
   name: 'The White Mountains',
   shortName: '',
   icon: 'something',

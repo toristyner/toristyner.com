@@ -1,4 +1,4 @@
-import whiteMountainsNH from './whiteMountainNH'
-import oahuHI from './oahuHI'
+import whiteMountains from './whiteMountainNH'
+import oahu from './oahuHI'
 
-export { oahuHI, whiteMountainsNH }
+export { oahu, whiteMountains }

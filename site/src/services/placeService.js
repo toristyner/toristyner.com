@@ -6,7 +6,5 @@ export const getPlaces = () => {
 }
 
 export const getPlaceById = id => {
-  return {
-    ...places[id],
-  }
+  return places[id]
 }
