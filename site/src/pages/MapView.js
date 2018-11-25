@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { getPlaceById } from '../services/placeService'
+import { getTripById } from '../services/placeService'
 
 class MapView extends Component {
   componentWillMount = () => {
     const { match } = this.props
     this.setState({
-      ...getPlaceById(match.params.tripId),
+      ...getTripById(match.params.tripId),
     })
   }
 
@@ -18,7 +18,7 @@ class MapView extends Component {
         <div>{this.state.dateRange}</div>
         <ul>
           {this.state.markers.map(m => (
-            <Link to={`${this.props.match.url}/${m.id}`}>
+            <Link key={`marker-${m.id}`} to={`${this.props.match.url}/${m.id}`}>
               <li>{m.name}</li>
             </Link>
           ))}
