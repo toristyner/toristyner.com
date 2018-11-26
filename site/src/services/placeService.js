@@ -1,5 +1,14 @@
-import * as places from './places'
+import * as trips from './trips'
+import { values } from 'lodash'
 
-export default {
-  ...places
+export const getTrips = () => {
+  return values(trips)
+}
+
+export const getTripById = id => {
+  return trips[id]
+}
+
+export const getPlaceById = (tripId, placeId) => {
+  return trips[tripId].markers.find(m => m.id === placeId)
 }
