@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Detail, MapView, TableOfContents } from './pages'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Detail, Map, TableOfContents, Home } from './pages'
 import './App.css'
 
 class App extends Component {
@@ -8,9 +8,10 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route path="/" exact component={TableOfContents} />
-          <Route path="/:tripId" exact component={MapView} />
-          <Route path="/:tripId/:placeId" exact component={Detail} />
+          <Route path="/" exact component={Home} />
+          <Route path="/trips" exact component={TableOfContents} />
+          <Route path="/trips/:tripId" exact component={Map} />
+          <Route path="/trips/:tripId/:placeId" exact component={Detail} />
         </div>
       </Router>
     )
