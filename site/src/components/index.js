@@ -1,7 +1,4 @@
-import Map from './Map'
+import GoogleMap from './GoogleMap'
 import Marker from './Marker'
 
-export {
-  Map,
-  Marker
-}
+export { GoogleMap, Marker }

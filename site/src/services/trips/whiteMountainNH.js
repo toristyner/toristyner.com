@@ -17,8 +17,8 @@ export default {
       types: ['stay'],
       subtypes: ['camping'],
       position: {
-        lat: 44.019467,
-        lng: -71.742668,
+        latitude: 44.019467,
+        longitude: -71.742668,
       },
     },
     {
@@ -28,8 +28,8 @@ export default {
       types: ['eat'],
       subtypes: ['icecream'],
       position: {
-        lat: 44.043194,
-        lng: -71.669952,
+        latitude: 44.043194,
+        longitude: -71.669952,
       },
     },
     {
@@ -37,8 +37,8 @@ export default {
       name: 'Lost River Gorge & Boulder Caves',
       website: 'http://www.lostrivergorge.com/',
       position: {
-        lat: 44.037237,
-        lng: -71.784091,
+        latitude: 44.037237,
+        longitude: -71.784091,
       },
     },
   ],

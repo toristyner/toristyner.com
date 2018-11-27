@@ -25,10 +25,12 @@ const withNavigation = (WrappedComponent, config) => {
     render = () => {
       return (
         <div className="column">
-          <WrappedComponent {...this.props} />
-          <div className="row">
-            {this.getBack()}
-            {this.getForward()}
+          <div className="container">
+            <WrappedComponent {...this.props} />
+          </div>
+          <div className="nav-bar">
+            <div className="back">{this.getBack()}</div>
+            <div className="forward">{this.getForward()}</div>
           </div>
         </div>
       )

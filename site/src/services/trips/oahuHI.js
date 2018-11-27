@@ -17,8 +17,8 @@ export default {
       types: ['stay'],
       subtypes: ['camping'],
       position: {
-        lat: 44.019467,
-        lng: -71.742668,
+        latitude: 44.019467,
+        longitude: -71.742668,
       },
     },
   ],
