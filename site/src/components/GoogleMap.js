@@ -8,10 +8,17 @@ class Map extends Component {
 
   static defaultProps = {
     zoom: 10,
+    markers: [],
+    loading: true,
   }
 
   componentDidMount = () => {
-    window.initMap = this.initMap
+    // hacky wait for google maps script to load
+    if (!window.google) {
+      setTimeout(() => this.initMap(), 1000)
+    } else {
+      this.initMap()
+    }
   }
 
   initMap = () => {
@@ -39,7 +46,10 @@ class Map extends Component {
       })
 
       let m = new window.google.maps.Marker({
-        position: marker.position,
+        position: {
+          lat: marker.position.latitude,
+          lng: marker.position.longitude,
+        },
         map: this.map,
       })
       m.addListener('click', () => this.onClickMarker(marker, m, iw))
@@ -52,14 +62,11 @@ class Map extends Component {
   }
 
   render() {
-    return <div id="map" style={myStyle.map} />
+    return <div id="map" />
   }
 }
 
 const myStyle = {
-  map: {
-    height: '100%',
-  },
   iwContainer: `"
     height: 120px
   "`,

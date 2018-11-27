@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Detail, Map, TableOfContents, Home } from './pages'
-import './App.css'
+import './App.scss'
 
 class App extends Component {
   render() {
