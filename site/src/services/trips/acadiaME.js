@@ -1,13 +1,14 @@
 export default {
-  id: 'oahu',
-  name: 'Oahu, Hawaii',
+  id: 'acadia',
+  name: 'Acadia, Maine',
+  description: 'Birthday trip for tori :)',
   shortName: '',
   icon: 'something',
   states: ['NH'],
-  dateRange: ['10/10/2018', '10/11/2018'],
+  dateRange: ['?', '?'],
   coordinatesToCenter: {
-    latitude: 21.442436,
-    longitude: -157.995523,
+    latitude: 44.307151,
+    longitude: -68.20244,
   },
   markers: [
     {

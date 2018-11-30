@@ -1,13 +1,14 @@
 export default {
-  id: 'oahu',
-  name: 'Oahu, Hawaii',
+  id: 'losAngeles',
+  name: 'Los Angeles, CA',
+  description: '',
   shortName: '',
   icon: 'something',
-  states: ['NH'],
-  dateRange: ['10/10/2018', '10/11/2018'],
+  states: ['CA'],
+  dateRange: ['?', '?'],
   coordinatesToCenter: {
-    latitude: 21.442436,
-    longitude: -157.995523,
+    latitude: 34.05341,
+    longitude: -118.263328,
   },
   markers: [
     {
