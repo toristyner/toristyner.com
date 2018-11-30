@@ -1,13 +1,13 @@
 export default {
-  id: 'oahu',
-  name: 'Oahu, Hawaii',
+  id: 'blueRidge',
+  name: 'Blue Ridge Mountains',
   shortName: '',
   icon: 'something',
   states: ['NH'],
-  dateRange: ['10/10/2018', '10/11/2018'],
+  dateRange: ['?', '?'],
   coordinatesToCenter: {
-    latitude: 21.442436,
-    longitude: -157.995523,
+    latitude: 38.441149,
+    longitude: -78.46786,
   },
   markers: [
     {

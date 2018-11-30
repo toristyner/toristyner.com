@@ -1,13 +1,14 @@
 export default {
-  id: 'oahu',
-  name: 'Oahu, Hawaii',
+  id: 'louisville',
+  name: 'Louisville, KY',
+  description: 'neighborworks',
   shortName: '',
   icon: 'something',
-  states: ['NH'],
-  dateRange: ['10/10/2018', '10/11/2018'],
+  states: ['KY'],
+  dateRange: ['?', '?'],
   coordinatesToCenter: {
-    latitude: 21.442436,
-    longitude: -157.995523,
+    latitude: 38.258305,
+    longitude: -85.75702,
   },
   markers: [
     {

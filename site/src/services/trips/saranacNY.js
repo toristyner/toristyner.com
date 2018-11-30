@@ -1,13 +1,13 @@
 export default {
-  id: 'oahu',
-  name: 'Oahu, Hawaii',
+  id: 'saranac',
+  name: 'Saranac, New York',
   shortName: '',
   icon: 'something',
-  states: ['NH'],
-  dateRange: ['10/10/2018', '10/11/2018'],
+  states: ['NY'],
+  dateRange: ['?', '?'],
   coordinatesToCenter: {
-    latitude: 21.442436,
-    longitude: -157.995523,
+    latitude: 44.293545,
+    longitude: -74.215384,
   },
   markers: [
     {
