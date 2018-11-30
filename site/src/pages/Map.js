@@ -29,6 +29,7 @@ class MapView extends Component {
       this.setState({
         initCenterCoords: { ...trip.coordinatesToCenter },
         trips: [trip],
+        zoom: trip.zoom,
       })
     }
   }
