@@ -219,13 +219,35 @@ export default {
     },
     {
       id: 'am-beehive',
-      stopId: 'acadis',
+      stopId: 'acadia',
       name: 'Beehive Trail',
       types: ['hike'],
       subtypes: [],
       position: {
         latitude: 44.331628,
         longitude: -68.185342,
+      },
+    },
+    {
+      id: 'am-bar-island',
+      stopId: 'acadia',
+      name: 'Bar Island',
+      types: ['hike'],
+      subtypes: [],
+      position: {
+        latitude: 44.39818,
+        longitude: -68.207538,
+      },
+    },
+    {
+      id: 'am-mojito',
+      stopId: 'acadia',
+      name: 'Route 66 / Cottage St Pub',
+      types: ['bars'],
+      subtypes: ['outdoor seating'],
+      position: {
+        latitude: 44.38977,
+        longitude: -68.205558,
       },
     },
   ],
